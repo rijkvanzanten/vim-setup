@@ -1,0 +1,30 @@
+[submodule "bundle/ctrlp.vim"]
+	path = bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git@github.com:ervandew/supertab.git
+[submodule "bundle/gitgutter"]
+	path = bundle/gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "bundle/multiple-cursors"]
+	path = bundle/multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
+[submodule "bundle/vim-vue"]
+	path = bundle/vim-vue
+	url = git@github.com:posva/vim-vue.git
+[submodule "bundle/javascript"]
+	path = bundle/javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule "bundle/scss-syntax"]
+	path = bundle/scss-syntax
+	url = git@github.com:cakebaker/scss-syntax.vim.git
+[submodule "bundle/buftabline"]
+	path = bundle/buftabline
+	url = git@github.com:ap/vim-buftabline.git
