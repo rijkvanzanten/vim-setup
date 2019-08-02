@@ -1,20 +1,18 @@
 execute pathogen#infect()
 
 filetype on
-syntax on
+syntax enable
+colorscheme onedark
 
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
+hi Normal guibg=NONE ctermbg=NONE
 
-let ayucolor="mirage"
-set bg=dark
-colorscheme ayu
+set termguicolors
+
+set nocompatible
+set ttyfast
+set lazyredraw
 
 set guifont=Dank\ Mono:h18
-highlight ColorColumn ctermbg=DarkGray
 set colorcolumn=100
 set number relativenumber
 
@@ -31,6 +29,7 @@ set expandtab
 set smartindent
 set autoindent
 set backspace=2
+set mouse=a
 
 " Get rid of swap files
 set backupdir=/tmp//
@@ -45,9 +44,6 @@ set hlsearch
 
 " Cancel search with leader /
 nnoremap <silent> <leader>/ :nohlsearch <cr>
-
-" Switch back and forth between current and last opened file
-nnoremap <Leader><Leader> :e#<CR>
 
 " Ignore node_modules/dist/git/etc files
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|.cache)|(\.(swp|ico|git|svn))$'
